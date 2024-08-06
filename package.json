@@ -1,0 +1,60 @@
+{
+  "name": "unique-media",
+  "version": "1.0.0",
+  "description": "Unique media and Entertainments company is the best event management company in Chennai. We are listed as a top event management company.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nithesh7708/unique-Media.git"
+  },
+  "keywords": [
+    "digital",
+    "marketing",
+    "agency",
+    "SEO",
+    "services",
+    "web",
+    "development",
+    "company",
+    "event",
+    "management",
+    "event",
+    "planners",
+    "social",
+    "media",
+    "marketing",
+    "corporate",
+    "event",
+    "planning",
+    "website",
+    "design",
+    "SEO",
+    "optimization",
+    "online",
+    "marketing",
+    "digital",
+    "advertising",
+    "web",
+    "design",
+    "services",
+    "event",
+    "management",
+    "company",
+    "local",
+    "SEO",
+    "PPC",
+    "advertising",
+    "social",
+    "media",
+    "strategy"
+  ],
+  "author": "Gunalan Lavanyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nithesh7708/unique-Media/issues"
+  },
+  "homepage": "https://github.com/Nithesh7708/unique-Media#readme"
+}

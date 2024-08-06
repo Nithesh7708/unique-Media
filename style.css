@@ -265,11 +265,12 @@ transition: all 0.3s ease-in-out;
     order: 2;
 }
 .navication_container .right .request .res{
-    width: 120px;
+    width: 140px;
     border-radius: 5px;
+    padding: 5px;
 }
 .navication_container .right .request .res a{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 800;
 }
 

@@ -29,6 +29,7 @@ nav{
     display: flex;
     justify-content: center;
     width: 100%;
+    z-index:999;
 }
 .navication_container{
     position: relative;
@@ -236,54 +237,65 @@ transition: all 0.3s ease-in-out;
     background: transparent;
     overflow: hidden;
     z-index: -2;
+    background:radial-gradient(circle at var(--x) var(--y),transparent 5%,rgba(1, 7, 0, 0.285)30%);
 }
-#home_page_section{
+#home_page_section {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: transparent;
+    background: radial-gradient(circle at 0% 50%, rgb(26, 124, 5), rgb(34, 107, 0), rgb(0, 72, 18));
     overflow: hidden;
-    z-index: -2;
+    z-index: -3;
+   
 }
-.bg_animation{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
+#home_page_section::after{
+    content: '';
+    width: 50%;
+    height: 50%;
     top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.bg_animation .animation_bg,
-.bg_animation .animation_small{
+    left: 0;
     position: absolute;
-    height: 100%;
-    width: 100%;
+    background:radial-gradient(rgb(70, 236, 10),rgba(24, 65, 0, 0.388));
+    filter: blur(50px);
+    z-index: -3;
+    animation: bg-glow 20s infinite ease-in-out;
 }
-.bg_animation .animation_bg img{
-    width: 300%;
-    object-fit: cover;
+#home_page_section::before{
+    content: '';
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background:radial-gradient(rgb(112, 255, 40),rgba(0, 74, 43, 0.388));
+    filter: blur(50px);
+    z-index: -3;
+    animation: bg-glow 20s infinite ease-in-out;
+    animation-delay: 2s;
 }
-.bg_animation .animation_small{
-    z-index: 1;
-    /* transform: translate(calc(var(--x) - 50%), calc(var(--y) - 50%)); */
-    background:radial-gradient(circle at var(--x) var(--y),transparent 5%,rgba(1, 7, 0, 0.285)30%);
-}
-.bg_animation .animation_small img{
-    width: 300%;
-    animation: bg_animation_glow 10s infinite linear;
-}
-
-@keyframes bg_animation_glow {
-    0%{
-transform: rotate(0deg)
+@keyframes bg-glow {
+    0% {
+        left: 0%;
+    }
+    40% {
+        top: 0%;
+       left: 100%; 
+    }
+    60% {
+        left: 100%; 
+        top: 100%;
+    }
+    80%{
+        left: 0%; 
+        top: 100%;
     }
     100%{
-            transform: rotate(360deg)
+        left: 0%; 
+        top: 0%; 
     }
 }
+
+
 .grid_container{
     width: 100%;
     height:100%;
@@ -660,7 +672,11 @@ font-size: 18px;
     animation: light 2s infinite linear;
     z-index: 999;
     perspective: 900px;
-    transform: translateX(-300px);
+    transform: translateX(0px);
+}
+#menu_list_checkbox:checked~#home_page_section .home-container{
+    left: -200px;
+    position: absolute;
 }
 @keyframes light {
 0%{

@@ -1,9 +1,11 @@
 let checkbox=document.getElementById('menubar');
 const body=document.body;
+let menu_pages=document.querySelector(".menu-list-container")
 const menu_btn=document.querySelector('.navication_container .right .menu label')
 
 menu_btn.addEventListener('click',()=>{
     checkbox.checked==true?body.classList.remove("scroll_hidden"):body.classList.add("scroll_hidden");
+    checkbox.checked==true?menu_pages.style.display="none":menu_pages.style.display="flex"
 })
 
 // Mouse animation
@@ -22,3 +24,7 @@ let menu_list=document.getElementById("menu_list_checkbox")
 menu_icon.addEventListener('click',()=>{
 menu_checkbox.checked==true?menu_list.checked=false:menu_list.checked=true;
 })
+
+
+
+

@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  
+   
     // Function to initialize navigation functionalities
     function initNavJS() {
         // Check if elements exist before accessing them
@@ -26,12 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const menuIcon = document.querySelector('.menu label');
         const menuCheckbox = document.getElementById('menubar');
         const menuList = document.getElementById('menu_list_checkbox');
+        const rotationbox=document.getElementById("rotation_3d_checkbox");
   
         if (menuBtn) {
             menuBtn.addEventListener('click', () => {
                 if (checkbox) {
                     checkbox.checked == true ? body.classList.remove('scroll_hidden') : body.classList.add('scroll_hidden');
                     checkbox.checked == true ? menuPages.style.display = 'none' : menuPages.style.display = 'flex';
+                    checkbox.checked == true ? rotationbox.checked=false:rotationbox.checked=true;
+                    
                 }
             });
         } else {

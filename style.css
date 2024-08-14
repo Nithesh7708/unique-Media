@@ -23,6 +23,7 @@
     align-items: center;
     justify-content: center;
     transition: all 0.5s linear;
+    background:r;
    
 }
 #rotation_3d_checkbox:checked~.home-section-container{
@@ -93,7 +94,7 @@ justify-content: flex-start;
 
 /* Btn section in a home */
 .home-section-container .home-page-grid .home-button-grid{
-    grid-column: 1/20;
+    grid-column: 4/20;
     grid-row:12/16;
     display: flex;
     align-items: center;
@@ -283,6 +284,7 @@ width: 80%;
     justify-content:center;
 }
 
+
 .home-section-container .home-star-rating-grid .star-rating-container{
     background:linear-gradient(-90deg,#000000c5,#00000061,#ffffff2c);
     width: 100%;
@@ -329,3 +331,1459 @@ color: white;
 .home-section-container .home-star-rating-grid .star-rating-container .stars-img img{
     width: 25px;
 }
+
+
+
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+
+    #home-section{
+        height: 100vh;
+    }
+    
+/* Grid Alignment */
+
+.home-section-container .home-page-grid .brand{
+    grid-column: 2/50;
+    grid-row:3/8;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content:flex-start;
+    gap: 5px;
+}
+/* -----star rating home page-----*/
+.home-section-container .home-star-rating-grid{
+    grid-column: 2/31;
+    grid-row: 6/15;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+/* -----Girl promo img home page-----*/
+.home-section-container .home-girl-grid{
+    z-index: 1;
+    grid-column: 21/50;
+    grid-row:  5/15;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}/* Video home section */
+.home-section-container .home-video-grid{
+    grid-column: 1/50;
+    grid-row:8/20;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    z-index: 99;
+}
+/* advertisment home section */
+.home-section-container .home-advertisement-grid{
+    grid-column: 1/40;
+    grid-row:16/25;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+/* Btn section in a home */
+.home-section-container .home-page-grid .home-button-grid{
+    grid-column: 2/30;
+    grid-row:5/11;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+
+
+
+/* Home section style */
+
+.home-section-container .home-page-grid .brand .head{
+    height: 40px;
+    width: 100%;
+    justify-content:flex-start;
+    align-items: center;
+    display:flex;    
+}
+.home-section-container .home-page-grid .brand .head h1{
+    font-size:1.8em;
+}
+.home-section-container .home-page-grid .brand .discription{
+height: 20px;
+width: 100%;
+justify-content: flex-start;
+}
+.home-section-container .home-page-grid .brand .discription p{
+    font-size: 0.9em;
+    font-weight:500;
+}
+
+
+/* Btn section in a home */
+
+.home-section-container .home-page-grid .home-button-grid .button-container{
+    width: 100%;
+    height: 90px;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container .btn{
+    width: 250px;
+    height: 40px;
+}
+
+.home-section-container .home-page-grid .home-button-grid .button-container .btn button{
+    position: absolute;
+    width: 110%;
+    height:80px;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container .btn button a{
+    font-size: 1.2em;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container .btn button a img{
+width: 20px;
+transform: translateX(5px);
+    
+}
+
+/* -----Girl promo img home page-----*/
+
+.home-section-container .home-girl-grid .girl-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+.home-section-container .home-girl-grid .girl-container .girl{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+.home-section-container .home-girl-grid .girl-container .girl img{
+    height: auto;
+    width: 100%;
+    transform: translate(-60px);
+}
+
+
+/* -----star rating home page-----*/
+
+
+.home-section-container .home-star-rating-grid .star-rating-container{
+    background:transparent;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+.home-section-container .home-star-rating-grid .star-rating-container .star-rate-numer{
+width: 40px;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .star-rate-numer h1{
+font-size: 30px;
+color: white;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .text{
+    display: flex;
+    height: 70%;
+    gap: 1px;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .text .text-1{
+    font-size: 15px;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .stars-img{
+    width: 100%;
+    gap: 10px;
+    justify-content:flex-start;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .stars-img img{
+    width: 20px;
+}
+
+/* Video home section */
+
+
+.home-section-container .home-video-grid .video-container{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-section-container .home-video-grid .video-container .video{
+    position: relative;
+    width: 120px;
+    height: 80px;
+}
+
+.home-section-container .home-video-grid .video-container .text{
+    background:linear-gradient(90deg,#38963ac4,#005b02,#005b02);
+    width: 60%;
+    height: 60px;
+    padding: 10px;
+    gap: 5px;
+}
+.home-section-container .home-video-grid .video-container .text .text1 p{
+font-size: 18px;
+color: white;
+font-weight: bold;
+}
+.home-section-container .home-video-grid .video-container .text .text2 p{
+font-size: 20px;
+color: white;
+font-weight: bold;
+}
+.home-section-container .home-video-grid .video-container .play-btn{
+    height:45px;
+    width: 45px;
+}
+.home-section-container .home-video-grid .video-container .play-btn img{
+width: 80%;
+}
+
+
+/* advertisment home section */
+.home-advertisement-grid{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.home-section-container .home-advertisement-grid .advertisment{
+background: #f7f7f7;
+width:80%;
+height: 220px;
+}
+
+.home-section-container .home-advertisement-grid .advertisment .img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-section-container .home-advertisement-grid .advertisment .img img{
+    width: 100%;
+}
+
+
+
+  }
+  
+  /* Small devices (portrait tablets and large phones, 577px to 768px) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    #home-section{
+        height: 100vh;
+    }
+    
+/* Grid Alignment */
+
+.home-section-container .home-page-grid .brand{
+    grid-column: 2/50;
+    grid-row:3/8;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content:flex-start;
+    gap: 5px;
+}
+/* -----star rating home page-----*/
+.home-section-container .home-star-rating-grid{
+    grid-column: 2/31;
+    grid-row: 6/15;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+/* -----Girl promo img home page-----*/
+.home-section-container .home-girl-grid{
+    z-index: 1;
+    grid-column: 21/50;
+    grid-row:  6/15;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}/* Video home section */
+.home-section-container .home-video-grid{
+    grid-column: 1/50;
+    grid-row:15/20;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    z-index: 99;
+}
+/* advertisment home section */
+.home-section-container .home-advertisement-grid{
+    grid-column: 1/51;
+    grid-row:19/26;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+/* Btn section in a home */
+.home-section-container .home-page-grid .home-button-grid{
+    grid-column: 2/30;
+    grid-row:5/10;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+
+
+
+/* Home section style */
+
+.home-section-container .home-page-grid .brand .head{
+    height: 40px;
+    width: 100%;
+    justify-content:flex-start;
+    align-items: center;
+    display:flex;    
+}
+.home-section-container .home-page-grid .brand .head h1{
+    font-size:2.6em;
+}
+.home-section-container .home-page-grid .brand .discription{
+height: 70px;
+width: 100%;
+justify-content: flex-start;
+margin-top: 10px;
+}
+.home-section-container .home-page-grid .brand .discription p{
+    font-size: 1.5em;
+    font-weight:500;
+}
+
+
+/* Btn section in a home */
+
+.home-section-container .home-page-grid .home-button-grid .button-container{
+    width: 100%;
+    height: 90px;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container .btn{
+    width: 280px;
+    height: 60px;
+}
+
+.home-section-container .home-page-grid .home-button-grid .button-container .btn button{
+    position: absolute;
+    width: 110%;
+    height:80px;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container .btn button a{
+    font-size: 1.2em;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container .btn button a img{
+width: 20px;
+transform: translateX(5px);
+    
+}
+
+/* -----Girl promo img home page-----*/
+
+.home-section-container .home-girl-grid .girl-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+.home-section-container .home-girl-grid .girl-container .girl{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+.home-section-container .home-girl-grid .girl-container .girl img{
+    height: auto;
+    width: 100%;
+    transform: translate(0px);
+}
+
+
+/* -----star rating home page-----*/
+
+
+.home-section-container .home-star-rating-grid .star-rating-container{
+    background:transparent;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+.home-section-container .home-star-rating-grid .star-rating-container .star-rate-numer{
+width: 60px;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .star-rate-numer h1{
+font-size: 40px;
+color: white;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .text{
+    display: flex;
+    height: 70%;
+    gap: 1px;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .text .text-1{
+    font-size: 18px;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .stars-img{
+    width: 100%;
+    gap: 10px;
+    justify-content:flex-start;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .stars-img img{
+    width: 20px;
+}
+
+/* Video home section */
+
+
+.home-section-container .home-video-grid .video-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-section-container .home-video-grid .video-container .video{
+    position: relative;
+    width: 180px;
+    height: 110px;
+}
+
+.home-section-container .home-video-grid .video-container .text{
+    background:linear-gradient(90deg,#38963ac4,#005b02,#005b02);
+    width: 80%;
+    height: 90px;
+    padding: 10px;
+    gap: 5px;
+}
+.home-section-container .home-video-grid .video-container .text .text1 p{
+font-size: 18px;
+color: white;
+font-weight: bold;
+}
+.home-section-container .home-video-grid .video-container .text .text2 p{
+font-size: 20px;
+color: white;
+font-weight: bold;
+}
+.home-section-container .home-video-grid .video-container .play-btn{
+    height:45px;
+    width: 45px;
+}
+.home-section-container .home-video-grid .video-container .play-btn img{
+width: 80%;
+}
+
+
+/* advertisment home section */
+.home-advertisement-grid{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+.home-section-container .home-advertisement-grid .advertisment{
+background: #f7f7f7;
+width:60%;
+height: 180px;
+}
+
+.home-section-container .home-advertisement-grid .advertisment .img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-section-container .home-advertisement-grid .advertisment .img img{
+    width: 100%;
+}
+
+
+  }
+  
+  /* Medium devices (landscape tablets and small laptops, 769px to 992px) */
+  @media (min-width: 767px) and (max-width: 992px) {
+    #home-section{
+        max-width: 1920px;
+        width: 100%;
+        height: 80vh;
+    }
+   /* ---Brand Section in a Home */
+.home-section-container .home-page-grid .brand{
+    grid-column: 3/34;
+    grid-row:2/9;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content:flex-start;
+    gap: 5px;
+}
+.home-section-container .home-page-grid .brand .head{
+    height: 60px;
+    width: 100%;
+    justify-content:flex-start;
+    align-items: center;
+    display:flex;
+    
+}
+.home-section-container .home-page-grid .brand .head h1{
+    font-size:2.4em;
+}
+.home-section-container .home-page-grid .brand .discription{
+height: 20px;
+width: 100%;
+align-items: flex-end;
+justify-content: flex-start;
+}
+.home-section-container .home-page-grid .brand .discription p{
+    font-size: 1.8em;
+    font-weight:600;
+    color: white;
+    text-transform:capitalize;
+    font-weight: 600;
+}
+
+/* Btn section in a home */
+.home-section-container .home-page-grid .home-button-grid{
+    grid-column: 1/20;
+    grid-row:6/18;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container{
+    width: 96%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container .btn{
+    width: 500px;
+    height: 60px;
+    border-radius:30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content:center;
+    overflow: hidden;
+    position: relative;
+}
+
+.home-section-container .home-page-grid .home-button-grid .button-container .btn button{
+    position: absolute;
+    width: 140%;
+    height:70px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container .btn button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container .btn button a img{
+width: 20px;
+transform: translateX(5px);
+    
+}
+
+/* advertisment home section */
+.home-section-container .home-advertisement-grid{
+    grid-column: 30/50;
+    grid-row:3/12;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.home-section-container .home-advertisement-grid .advertisment{
+background: #f7f7f7;
+width: 270px;
+height: 250px;
+}
+
+.home-section-container .home-advertisement-grid .advertisment .img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-section-container .home-advertisement-grid .advertisment .img img{
+    width: 100%;
+}
+/* Video home section */
+.home-section-container .home-video-grid{
+    grid-column: 1/31;
+    grid-row:22/25;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.home-section-container .home-video-grid .video-container{
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-section-container .home-video-grid .video-container .video{
+    position: relative;
+    width: 210px;
+    height: 120px;
+}
+
+.home-section-container .home-video-grid .video-container .video .video-source{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-section-container .home-video-grid .video-container .video .video-source video{
+    width: 100%;
+}
+
+.home-section-container .home-video-grid .video-container .text{
+    background:linear-gradient(90deg,#ffffff6a,#ffffff61,#ffffff01);
+    width: 60%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+    padding: 20px;
+    gap: 10px;
+}
+.home-section-container .home-video-grid .video-container .text .text1 p{
+font-size: 17px;
+color: white;
+font-weight: bold;
+}
+.home-section-container .home-video-grid .video-container .text .text2 p{
+font-size: 18px;
+color: white;
+}
+.home-section-container .home-video-grid .video-container .play-btn{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    cursor: pointer;
+   
+}
+.home-section-container .home-video-grid .video-container .play-btn img{
+width: 80%;
+}
+/* -----Girl promo img home page-----*/
+.home-section-container .home-girl-grid{
+    z-index: 1;
+    grid-column: 8/30;
+    grid-row:  7/23;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    z-index: -1;
+}
+.home-section-container .home-girl-grid .girl-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.home-section-container .home-girl-grid .girl-container .girl{
+    width: 100%;
+    height: 97%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.home-section-container .home-girl-grid .girl-container .girl img{
+    height:100%;
+    width: auto;
+}
+/* -----star rating home page-----*/
+.home-section-container .home-star-rating-grid{
+    grid-column: 30/51;
+    grid-row:  22/25;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.home-section-container .home-star-rating-grid .star-rating-container{
+    background:linear-gradient(-90deg,#000000c5,#00000061,#ffffff03);
+    width: 100%;
+    height: 80px;
+}
+
+.home-section-container .home-star-rating-grid .star-rating-container .star-rate-numer{
+width: 70px;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .star-rate-numer h1{
+font-size: 50px;
+color: white;
+}
+
+.home-section-container .home-star-rating-grid .star-rating-container .text .text-1{
+    font-size: 20px;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .stars-img{
+    width: 80%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .stars-img img{
+    width: 25px;
+}
+
+
+  }
+  
+  /* Large devices (laptops and desktops, 993px to 1200px) */
+  @media (min-width: 993px) and (max-width: 1200px) {
+    #home-section{
+        max-width: 1920px;
+        width: 100%;
+        height: 80vh;
+    }
+   /* ---Brand Section in a Home */
+.home-section-container .home-page-grid .brand{
+    grid-column: 3/46;
+    grid-row:2/9;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content:flex-start;
+    gap: 5px;
+}
+.home-section-container .home-page-grid .brand .head{
+    height: 80px;
+    width: 100%;
+    justify-content:flex-start;
+    align-items: center;
+    display:flex;
+}
+.home-section-container .home-page-grid .brand .head h1{
+    font-size:4em;
+}
+.home-section-container .home-page-grid .brand .discription{
+    width: 100%;
+}
+.home-section-container .home-page-grid .brand .discription p{
+    font-size:2em;
+    font-weight:600;
+    margin-top: 20px;
+}
+
+/* Btn section in a home */
+.home-section-container .home-page-grid .home-button-grid{
+    grid-column: 1/20;
+    grid-row:6/18;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container{
+    width: 96%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container .btn{
+    width: 500px;
+    height: 70px;
+    border-radius:30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content:center;
+    overflow: hidden;
+    position: relative;
+}
+
+.home-section-container .home-page-grid .home-button-grid .button-container .btn button{
+    position: absolute;
+    width: 140%;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container .btn button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container .btn button a img{
+width: 20px;
+transform: translateX(5px);
+    
+}
+
+/* advertisment home section */
+.home-section-container .home-advertisement-grid{
+    grid-column: 14/50;
+    grid-row:7/12;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    
+}
+
+.home-section-container .home-advertisement-grid .advertisment{
+background: #f7f7f7;
+width:300px;
+height: 290px;
+}
+
+.home-section-container .home-advertisement-grid .advertisment .img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-section-container .home-advertisement-grid .advertisment .img img{
+    width: 100%;
+}
+/* Video home section */
+.home-section-container .home-video-grid{
+    grid-column: 1/31;
+    grid-row:22/25;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.home-section-container .home-video-grid .video-container{
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-section-container .home-video-grid .video-container .video{
+    position: relative;
+    width: 210px;
+    height: 140px;
+}
+
+.home-section-container .home-video-grid .video-container .video .video-source{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-section-container .home-video-grid .video-container .video .video-source video{
+    width: 100%;
+}
+
+.home-section-container .home-video-grid .video-container .text{
+    background:linear-gradient(90deg,#216f076a,#0f920d,#013800);
+    width: 60%;
+    height: 100px;
+    z-index: 999;
+}
+.home-section-container .home-video-grid .video-container .text .text1 p{
+font-size: 30px;
+color: white;
+font-weight: bold;
+}
+.home-section-container .home-video-grid .video-container .text .text2 p{
+font-size: 26px;
+color: white;
+}
+.home-section-container .home-video-grid .video-container .play-btn{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    cursor: pointer;
+   
+}
+.home-section-container .home-video-grid .video-container .play-btn img{
+width: 80%;
+}
+/* -----Girl promo img home page-----*/
+.home-section-container .home-girl-grid{
+    z-index: 1;
+    grid-column: 8/30;
+    grid-row:  7/23;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    z-index: 99;
+}
+.home-section-container .home-girl-grid .girl-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.home-section-container .home-girl-grid .girl-container .girl{
+    width: 100%;
+    height: 97%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.home-section-container .home-girl-grid .girl-container .girl img{
+    height:100%;
+    width: auto;
+}
+/* -----star rating home page-----*/
+.home-section-container .home-star-rating-grid{
+    grid-column: 28/51;
+    grid-row:  22/25;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.home-section-container .home-star-rating-grid .star-rating-container{
+    background:linear-gradient(-90deg,#000000c5,#00000061,#013800);
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+}
+
+.home-section-container .home-star-rating-grid .star-rating-container .star-rate-numer{
+width: 70px;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .star-rate-numer h1{
+font-size: 50px;
+color: white;
+}
+
+.home-section-container .home-star-rating-grid .star-rating-container .text .text-1{
+    font-size: 20px;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .stars-img{
+    width: 80%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .stars-img img{
+    width: 25px;
+}
+
+  }
+  
+
+  /* Extra large devices (large desktops and monitors, 1201px and up) */
+  @media (min-width: 1201px) {
+    #home-section{
+        max-width: 1920px;
+        width: 100%;
+        height: 80vh;
+    }
+   /* ---Brand Section in a Home */
+.home-section-container .home-page-grid .brand{
+    grid-column: 3/39;
+    grid-row:2/9;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content:flex-start;
+    gap: 5px;
+}
+.home-section-container .home-page-grid .brand .head{
+    height: 60px;
+    width: 100%;
+    justify-content:flex-start;
+    align-items: center;
+    display:flex;
+    
+}
+.home-section-container .home-page-grid .brand .head h1{
+    font-size:4em;
+}
+.home-section-container .home-page-grid .brand .discription{
+    width: 100%;
+}
+.home-section-container .home-page-grid .brand .discription p{
+    font-size:2em;
+    font-weight:600;
+    margin-top: 20px;
+}
+
+/* Btn section in a home */
+.home-section-container .home-page-grid .home-button-grid{
+    grid-column: 1/20;
+    grid-row:6/18;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container{
+    width: 96%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container .btn{
+    width: 500px;
+    height: 70px;
+    border-radius:30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content:center;
+    overflow: hidden;
+    position: relative;
+}
+
+.home-section-container .home-page-grid .home-button-grid .button-container .btn button{
+    position: absolute;
+    width: 140%;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container .btn button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+}
+.home-section-container .home-page-grid .home-button-grid .button-container .btn button a img{
+width: 20px;
+transform: translateX(5px);
+    
+}
+
+/* advertisment home section */
+.home-section-container .home-advertisement-grid{
+    grid-column: 14/50;
+    grid-row:7/12;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    
+}
+
+.home-section-container .home-advertisement-grid .advertisment{
+background: #f7f7f7;
+width:300px;
+height: 290px;
+}
+
+.home-section-container .home-advertisement-grid .advertisment .img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-section-container .home-advertisement-grid .advertisment .img img{
+    width: 100%;
+}
+/* Video home section */
+.home-section-container .home-video-grid{
+    grid-column: 1/31;
+    grid-row:22/25;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.home-section-container .home-video-grid .video-container{
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-section-container .home-video-grid .video-container .video{
+    position: relative;
+    width: 210px;
+    height: 140px;
+}
+
+.home-section-container .home-video-grid .video-container .video .video-source{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-section-container .home-video-grid .video-container .video .video-source video{
+    width: 100%;
+}
+
+.home-section-container .home-video-grid .video-container .text{
+    background:linear-gradient(90deg,#216f076a,#0f920d,#013800);
+    width: 60%;
+    height: 100px;
+    z-index: 999;
+}
+.home-section-container .home-video-grid .video-container .text .text1 p{
+font-size: 30px;
+color: white;
+font-weight: bold;
+}
+.home-section-container .home-video-grid .video-container .text .text2 p{
+font-size: 26px;
+color: white;
+}
+.home-section-container .home-video-grid .video-container .play-btn{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    cursor: pointer;
+   
+}
+.home-section-container .home-video-grid .video-container .play-btn img{
+width: 80%;
+}
+/* -----Girl promo img home page-----*/
+.home-section-container .home-girl-grid{
+    z-index: 1;
+    grid-column: 15/30;
+    grid-row:  7/23;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    z-index: 99;
+}
+.home-section-container .home-girl-grid .girl-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.home-section-container .home-girl-grid .girl-container .girl{
+    width: 100%;
+    height: 97%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.home-section-container .home-girl-grid .girl-container .girl img{
+    height:100%;
+    width: auto;
+}
+/* -----star rating home page-----*/
+.home-section-container .home-star-rating-grid{
+    grid-column: 27/51;
+    grid-row:  22/25;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.home-section-container .home-star-rating-grid .star-rating-container{
+    background:linear-gradient(-90deg,#000000c5,#00000061,#013800);
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+}
+
+.home-section-container .home-star-rating-grid .star-rating-container .star-rate-numer{
+width: 70px;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .star-rate-numer h1{
+font-size: 50px;
+color: white;
+}
+
+.home-section-container .home-star-rating-grid .star-rating-container .text .text-1{
+    font-size: 20px;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .stars-img{
+    width: 80%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.home-section-container .home-star-rating-grid .star-rating-container .stars-img img{
+    width: 25px;
+}
+
+  }
+  
+    /* Extra large devices (large desktops and monitors, 1201px and up) */
+    @media (min-width: 1401px) {
+        #home-section{
+            height: 80vh;
+        }
+       /* ---Brand Section in a Home */
+    .home-section-container .home-page-grid .brand{
+        grid-column: 3/39;
+        grid-row:2/9;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        justify-content:flex-start;
+        gap: 5px;
+    }
+    .home-section-container .home-page-grid .brand .head{
+        height: 60px;
+        width: 100%;
+        justify-content:flex-start;
+        align-items: center;
+        display:flex;
+        
+    }
+    .home-section-container .home-page-grid .brand .head h1{
+        font-size:4em;
+    }
+    .home-section-container .home-page-grid .brand .discription{
+        width: 100%;
+    }
+    .home-section-container .home-page-grid .brand .discription p{
+        font-size:2em;
+        font-weight:600;
+        margin-top: 20px;
+    }
+    
+    /* Btn section in a home */
+    .home-section-container .home-page-grid .home-button-grid{
+        grid-column: 1/20;
+        grid-row:6/18;
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+    }
+    .home-section-container .home-page-grid .home-button-grid .button-container{
+        width: 96%;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .home-section-container .home-page-grid .home-button-grid .button-container .btn{
+        width: 500px;
+        height: 70px;
+        border-radius:30px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        justify-content:center;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .home-section-container .home-page-grid .home-button-grid .button-container .btn button{
+        position: absolute;
+        width: 140%;
+    }
+    .home-section-container .home-page-grid .home-button-grid .button-container .btn button a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+    }
+    .home-section-container .home-page-grid .home-button-grid .button-container .btn button a img{
+    width: 25px;
+    transform: translateX(5px);
+        
+    }
+    
+    /* advertisment home section */
+    .home-section-container .home-advertisement-grid{
+        grid-column: 14/50;
+        grid-row:7/12;
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+        
+    }
+    
+    .home-section-container .home-advertisement-grid .advertisment{
+    background: #f7f7f7;
+    width:300px;
+    height: 290px;
+    }
+    
+    .home-section-container .home-advertisement-grid .advertisment .img{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-section-container .home-advertisement-grid .advertisment .img img{
+        width: 100%;
+    }
+    /* Video home section */
+    .home-section-container .home-video-grid{
+        grid-column: 1/32;
+        grid-row:20/25;
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+    }
+    
+    .home-section-container .home-video-grid .video-container{
+        width: 97%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .home-section-container .home-video-grid .video-container .video{
+        position: relative;
+        width: 240px;
+        height: 150px;
+    }
+    
+    .home-section-container .home-video-grid .video-container .video .video-source{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .home-section-container .home-video-grid .video-container .video .video-source video{
+        width: 100%;
+    }
+    
+    .home-section-container .home-video-grid .video-container .text{
+        background:linear-gradient(90deg,#216f076a,#0f920d,#013800);
+        width: 60%;
+        height: 100px;
+        z-index: 999;
+    }
+    .home-section-container .home-video-grid .video-container .text .text1 p{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    }
+    .home-section-container .home-video-grid .video-container .text .text2 p{
+    font-size: 26px;
+    color: white;
+    }
+    .home-section-container .home-video-grid .video-container .play-btn{
+        height: 70px;
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        cursor: pointer;
+       
+    }
+    .home-section-container .home-video-grid .video-container .play-btn img{
+    width: 80%;
+    }
+    /* -----Girl promo img home page-----*/
+    .home-section-container .home-girl-grid{
+        z-index: 1;
+        grid-column: 15/30;
+        grid-row:  7/23;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        z-index: 99;
+    }
+    .home-section-container .home-girl-grid .girl-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .home-section-container .home-girl-grid .girl-container .girl{
+        width: 100%;
+        height: 97%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .home-section-container .home-girl-grid .girl-container .girl img{
+        height:100%;
+        width: auto;
+    }
+    /* -----star rating home page-----*/
+    .home-section-container .home-star-rating-grid{
+        grid-column: 27/51;
+        grid-row:  20/25;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    
+    
+    .home-section-container .home-star-rating-grid .star-rating-container{
+        background:linear-gradient(-90deg,#000000c5,#00000061,#013800);
+        width: 100%;
+        height: 100px;
+        z-index: 999;
+    }
+    
+    .home-section-container .home-star-rating-grid .star-rating-container .star-rate-numer{
+    width: 70px;
+    }
+    .home-section-container .home-star-rating-grid .star-rating-container .star-rate-numer h1{
+    font-size: 50px;
+    color: white;
+    }
+    
+    .home-section-container .home-star-rating-grid .star-rating-container .text .text-1{
+        font-size: 20px;
+    }
+    .home-section-container .home-star-rating-grid .star-rating-container .stars-img{
+        width: 80%;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    .home-section-container .home-star-rating-grid .star-rating-container .stars-img img{
+        width: 25px;
+    }
+    
+      }
+    
+  
